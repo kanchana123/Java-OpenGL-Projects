@@ -24,21 +24,12 @@ public class Fish extends GLJPanel implements GLEventListener {
             public void actionPerformed(ActionEvent arg0) {
                 long t = System.currentTimeMillis() - startTime;
                 fish.x_value = 0.001*t;
-//                System.out.println(fish.x_value);
                 fish.repaint();
             }
         };
-//
+
         Timer animationTimer = new Timer(16, actionListener);
         animationTimer.start();
-        
-//        double k = 0;
-//        while (k <= 1) {
-//            fish.x_value = k;
-//            fish.repaint();
-//            k +=0.0000000001;
-//        }
-
     }
     
     private double x_value;
@@ -164,8 +155,6 @@ public class Fish extends GLJPanel implements GLEventListener {
     
     public void init(GLAutoDrawable drawable) {
         // called when the panel is created
-//        GL2 gl = drawable.getGL().getGL2();
-
 //        // Add initialization code here!
         
         GL2 gl = drawable.getGL().getGL2();
